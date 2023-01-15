@@ -10,7 +10,7 @@ import asyncio
 # Code
 
 client = commands.Bot(command_prefix=">", intents=discord.Intents.all())
-TOKEN = "MTA2Mzg2MjExMjMxODkyNjg3OA.GJWZ2u.eoivVRVNyhDiiJXtP2xQsvFwGY7lOM6xvT_6eQ"
+TOKEN = "MTA2Mzg2MjExMjMxODkyNjg3OA.GIkMtE.sMyKeUcGmKuMYil2QMcPfk2NmruqC_3fYcEyMM"
 bot_status = cycle(["'>helpme for help'", "Hồng Phúc", "U70 trẻ đẹp"])
 
 @tasks.loop(seconds=10)

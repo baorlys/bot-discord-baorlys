@@ -16,7 +16,7 @@ class Quote(commands.Cog):
             random_res = f.readlines()
             res = random.choice(random_res)
         embed_message = discord.Embed(title="Những câu nói hay", description=res, color=discord.Color.random())
-        embed_message.set_image(url="https://github.com/baorlys/bot-discord-baorlys/blob/main/imgs/beoem.jpg")
+        embed_message.set_thumbnail(url="https://iili.io/HY6CIC7.jpg")
         await ctx.send(embed = embed_message)
 
 async def setup(client):
