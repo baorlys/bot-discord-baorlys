@@ -1,4 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 import os
-
-TOKEN = os.environ.get("TOKEN")
-print(TOKEN)
+token = os.environ.get("TOKEN")
+print(token)

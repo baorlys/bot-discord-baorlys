@@ -28,6 +28,11 @@ class HelpCommand(commands.Cog):
             value="Quote of TAFI",
             inline=True
         )
+        embed.add_field(
+            name=">kick",
+            value=">kick @MultipleMember reason",
+            inline=True
+        )
         await ctx.send(embed=embed)
 
 async def setup(client):

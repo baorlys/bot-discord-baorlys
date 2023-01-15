@@ -4,13 +4,14 @@ from discord.ext import commands, tasks
 import random
 from itertools import cycle
 import os
+from dotenv import load_dotenv
 import asyncio
+load_dotenv()
 
 
-# Code
 
 client = commands.Bot(command_prefix=">", intents=discord.Intents.all())
-TOKEN = "MTA2Mzg2MjExMjMxODkyNjg3OA.GIkMtE.sMyKeUcGmKuMYil2QMcPfk2NmruqC_3fYcEyMM"
+TOKEN = os.environ.get("TOKEN")
 bot_status = cycle(["'>helpme for help'", "Hồng Phúc", "U70 trẻ đẹp"])
 
 @tasks.loop(seconds=10)
